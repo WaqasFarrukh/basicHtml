@@ -17,8 +17,8 @@
         <ul>
           <a href="./blog.html" target="_blank"><li>BLOG</li></a>
           <a href="./about-us.html" target="_blank"><li>ABOUT US</li></a>
-          <a href="#"><button>Sign Up</button></a>
-          <a href="#"><button>Login</button></a>
+          <a href="#signup"><button>Sign Up</button></a>
+          <a href="#login"><button>Login</button></a>
         </ul>
       </nav>
     </header>
@@ -98,7 +98,113 @@
           >An investment in knowledge pays the best interest</q
         >
       </section>
+      <br />
     </main>
+    <br />
+
+    <!-- Sign Up -->
+
+    <section id="signup">
+      <h2>Sign Up</h2>
+      <form action="" method="post">
+        <div>
+          <label for="fullName">First Name</label>
+          <input
+            type="text"
+            name="name"
+            id="fullName"
+            placeholder="Please enter Full Name"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="gender">Gender</label>
+          <select name="gender" id="gender">
+            <option value="">Please choose an option</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="age">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            placeholder="Please select your Age"
+            min="18"
+            max="99"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="emailAddress">Email Address</label>
+          <input
+            type="email"
+            name="email"
+            id="emailAddress"
+            placeholder="Please enter your Email Address"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Please enter password"
+            minlength="5"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            name="confirmPassword"
+            id="confirmPassword"
+            placeholder="Re-enter password to confirm"
+            minlength="5"
+          />
+        </div>
+        <input type="submit" name="signup" value="Sign Up" />
+      </form>
+    </section>
+
+    <!-- Log In -->
+
+    <section id="login">
+      <h2>Login</h2>
+      <form action="" method="post">
+        <div>
+          <label for="emailAddress">Email Address</label>
+          <input
+            type="email"
+            name="email"
+            id="emailAddress"
+            placeholder="Please enter your Email Address"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Please enter password"
+            minlength="5"
+          />
+        </div>
+        <br />
+        <input type="submit" name="login" value="Login" />
+        <br />
+        <a href="#">Forgot Password</a>
+      </form>
+    </section>
 
     <!-- Footer -->
     <footer>
